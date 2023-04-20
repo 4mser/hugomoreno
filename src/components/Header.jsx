@@ -88,7 +88,7 @@ const HeaderStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-  box-shadow: 0 2px 10px var(--bShadow);
+  /* box-shadow: 0 2px 10px var(--bShadow); */
   /* background: ${(props) =>
     props.tema === "light" ? "var(--color2)" : "var(--color1)"}; */
 
