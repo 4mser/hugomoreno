@@ -73,7 +73,7 @@ const Logo = styled.div`
   font-family: montserrat;
   user-select: none;
   color: ${(props) =>
-    props.tema === "dark" ? "var(--color2)" : "var(--color1)"};
+    props.tema === "dark" ? "var(--color2)" : "var(--blackColor)"};
 `;
 
 const HeaderStyle = styled.div`
@@ -96,7 +96,7 @@ const HeaderStyle = styled.div`
     font-size: 2.4rem;
     user-select: none;
     color: ${(props) =>
-      props.tema === "dark" ? "var(--color2)" : "var(--color1)"};
+      props.tema === "dark" ? "var(--color2)" : "var(--blackColor)"};
   }
 `;
 
