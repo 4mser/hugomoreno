@@ -81,7 +81,7 @@ Error generating stack: `+o.message+`
   font-size: 1.3rem;
   font-family: montserrat;
   user-select: none;
-  color: ${e=>e.tema==="dark"?"var(--color2)":"var(--color1)"};
+  color: ${e=>e.tema==="dark"?"var(--color2)":"var(--blackColor)"};
 `,G1=Br.div`
   position: fixed;
   top: 0;
@@ -100,7 +100,7 @@ Error generating stack: `+o.message+`
   svg {
     font-size: 2.4rem;
     user-select: none;
-    color: ${e=>e.tema==="dark"?"var(--color2)":"var(--color1)"};
+    color: ${e=>e.tema==="dark"?"var(--color2)":"var(--blackColor)"};
   }
 `,K1=Br.div`
   list-style: none;
