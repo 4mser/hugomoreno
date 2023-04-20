@@ -3,7 +3,7 @@ import "./index.css";
 import { useState } from "react";
 import Bg from "./components/Bg";
 import Header from "./components/Header";
-import LandPage from "./components/LandPage";
+import SwiperCategories from "./components/SwiperCategories";
 
 function App() {
   const [MenuOpen, setMenuOpen] = useState("open");
@@ -36,7 +36,7 @@ function App() {
         MenuOpen={MenuOpen}
       ></Header>
 
-      <LandPage></LandPage>
+      <SwiperCategories tema={tema}></SwiperCategories>
     </div>
   );
 }
