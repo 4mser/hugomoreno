@@ -31,7 +31,7 @@ const Header = ({ handleMenuChange, handleTemaChange, tema, MenuOpen }) => {
         )}
       </Menu>
 
-      <Nav MenuOpen={MenuOpen}>
+      <Nav MenuOpen={MenuOpen} tema={tema}>
         <li>
           <BiHome></BiHome> Inicio
         </li>
@@ -89,8 +89,8 @@ const HeaderStyle = styled.div`
   align-items: center;
   z-index: 999;
   box-shadow: 0 2px 10px var(--bShadow);
-  background: ${(props) =>
-    props.tema === "light" ? "var(--color2)" : "var(--color1)"};
+  /* background: ${(props) =>
+    props.tema === "light" ? "var(--color2)" : "var(--color1)"}; */
 
   svg {
     font-size: 2.4rem;
@@ -108,11 +108,8 @@ const Nav = styled.div`
   height: ${(props) => (props.MenuOpen === "open" ? "0rem" : "4rem")};
   padding: 0 2rem;
   left: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(58, 174, 180, 1) 0%,
-    rgba(0, 28, 73, 1) 100%
-  );
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--navColor)" : "var(--navColorLight)"};
   overflow: hidden;
   top: 5rem;
   display: flex;

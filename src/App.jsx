@@ -1,9 +1,9 @@
 import "./index.css";
-import styled from "styled-components";
 
 import { useState } from "react";
 import Bg from "./components/Bg";
 import Header from "./components/Header";
+import LandPage from "./components/LandPage";
 
 function App() {
   const [MenuOpen, setMenuOpen] = useState("open");
@@ -35,6 +35,8 @@ function App() {
         handleMenuChange={handleMenuChange}
         MenuOpen={MenuOpen}
       ></Header>
+
+      <LandPage></LandPage>
     </div>
   );
 }
